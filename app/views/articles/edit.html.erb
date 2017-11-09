@@ -1,6 +1,6 @@
 
 
-<%= form_with scope: :article, url: articles_path, local: true do |form| %>
+<%= form_with(model: @article) do |form| %>
 
 <!-- show me the errors -->
 <% if @article.errors.any? %>
